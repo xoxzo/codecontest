@@ -1,0 +1,192 @@
+/** Base font for the whole site, overriding Bootstrap **/
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,700');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 185px;
+    color: #505050;
+    font-family: 'Raleway', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+}
+
+a {
+    color: #3f7cfc;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+  padding: 16px;
+}
+
+.navbar-brand img {
+  width: 100px;
+  margin: 2px 0;
+}
+
+.navbar-brand span {
+  color: #ddd;
+  font-size: 1.15rem;
+  margin-left: 6px;
+}
+
+header {
+  padding-bottom: 100px;
+  color: white;
+  background: #292b2c;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-top: -1px;
+}
+
+header .wanted {
+  padding-top: 85px;
+  padding-bottom: 40px;
+  border-bottom: 13px solid;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+header h1, header h2 {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+header h1 {
+  font-size: 7rem;
+}
+
+header h2 {
+  font-size: 2.5rem;
+}
+
+header h3 {
+  margin-top: 55px;
+  font-family: 'Lobster', cursive;
+  color: #ffd446;
+  font-size: 2.15rem;
+}
+
+main {
+  min-height: 100%;
+  margin-top: 30px;
+}
+
+main section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+main section:last-child {
+  border-bottom: none;
+}
+
+main section h2 {
+  font-weight: 700;
+  color: #274da9;
+  margin-bottom: 15px;
+}
+
+main section.section-bg-blue h2 {
+  color: white;
+}
+
+footer {
+  font-size: 0.85rem;
+  position: absolute;
+  bottom: 0;
+  background-color: #2334ab;
+  width: 100%;
+  color: white;
+  padding: 45px 0;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px){
+  .navbar {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  header {
+    font-size: 1rem;
+  }
+
+  header .wanted {
+    padding-top: 60px;
+  }
+
+  header h1 {
+    font-size: 6rem;
+  }
+
+  header h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 575px){
+  header .wanted {
+    padding-bottom: 35px;
+  }
+
+  header h1 {
+    font-size: 5rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header h3 {
+    font-size: 1.7rem;
+  }
+
+  header br {
+    display: none;
+  }
+}
+
+@media (max-width: 450px){
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  header {
+    padding-bottom: 75px;
+  }
+
+  header .wanted {
+    padding-bottom: 25px;
+    padding-top: 40px;
+    border-bottom: 10px solid;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  header h2 {
+    font-size: 1.7rem;
+    font-family: 'Raleway', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+    font-weight: bold;
+  }
+
+  header h3 {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+}

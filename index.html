@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>XOXZO Code PyCon APAC 2017</title>
+  <link rel="icon" href="/images/xoxzo_16x16_favicon.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/images/xoxzo_navbar_logo_w_trans.png">
+        <span>Code PyCon APAC 2017</span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a data-scroll href="#rule" class="nav-link">Contest Rules</a>
+          </li>
+          <li class="nav-item">
+            <a data-scroll href="#about" class="nav-link">About XOXZO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container text-center">
+      <div class="wanted">
+        <h1>Wanted</h1>
+        <h2>Telephony API Ideas !</h2>
+      </div>
+      <p>XOXZO is seeking new ideas for our telephony API applications <br>and hosting XOXZO Code PyCon APAC 2017, an open source code developing contest.</p>
+      <h3>Winner gets $100 Amazon gift credit !</h3>
+    </div>
+  </header>
+
+  <main>
+    <section id="rule">
+      <div class="container">
+        <h2>Contest Rules</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris turpis magna, scelerisque vitae lectus ut, rhoncus placerat leo. Nam consectetur ipsum ex, vel commodo erat viverra sed. Proin rutrum nunc a mauris lacinia, non suscipit est feugiat. Pellentesque posuere semper gravida. Pellentesque tempus maximus mauris at ullamcorper. Cras quis tempus ligula, in elementum ex. Nulla eget odio at nibh pellentesque lacinia. Vestibulum tincidunt urna libero, sed varius dui fringilla eget. Donec auctor nisi sed ligula tincidunt imperdiet. Curabitur ullamcorper condimentum massa, at aliquam lorem viverra a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed iaculis dui est, eu fermentum nulla tristique id. In ultricies, tellus ut sollicitudin placerat, eros augue scelerisque metus, eget porttitor elit est vitae purus.
+        </p>
+        <h3>Subtitle</h3>
+        <p>
+          Mauris elementum tempus mi laoreet sollicitudin. Nulla sed sem tempus, dignissim arcu id, porta arcu. Morbi aliquet justo non ligula ultrices tempor. Cras varius congue nisl nec consequat. Sed tristique mi sed sapien posuere auctor. Nullam sit amet pellentesque mauris. Sed ut neque blandit, aliquam augue rhoncus, faucibus felis. Duis mollis enim urna, sit amet condimentum lacus consectetur id. Phasellus ornare libero ligula, nec efficitur sapien fermentum vitae.
+        </p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2>About XOXZO</h2>
+        <p>
+          Mauris elementum tempus mi laoreet sollicitudin. Nulla sed sem tempus, dignissim arcu id, porta arcu. Morbi aliquet justo non ligula ultrices tempor. Cras varius congue nisl nec consequat. Sed tristique mi sed sapien posuere auctor. Nullam sit amet pellentesque mauris. Sed ut neque blandit, aliquam augue rhoncus, faucibus felis. Duis mollis enim urna, sit amet condimentum lacus consectetur id. Phasellus ornare libero ligula, nec efficitur sapien fermentum <a href="http://info.xoxzo.com">Xoxzo</a>.
+        </p>
+        <h3>XOXZO Telephony API</h3>
+        <h3>How to sign up XOXZO account</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="text-center">
+        &copy; 2017 Xoxzo Inc. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+          
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
