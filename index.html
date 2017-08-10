@@ -9,14 +9,14 @@
   <link rel="icon" href="/images/xoxzo_16x16_favicon.png">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="/images/xoxzo_navbar_logo_w_trans.png">
+        <img src="./images/xoxzo_navbar_logo_w_trans.png">
         <span>Code PyCon APAC 2017</span>
       </a>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -35,6 +35,7 @@
   <header>
     <div class="container text-center">
       <div class="wanted">
+        <h2>*** This site is under construction ***</h2>
         <h1>Wanted</h1>
         <h2>Telephony API Ideas !</h2>
       </div>
@@ -48,23 +49,59 @@
       <div class="container">
         <h2>Contest Rules</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris turpis magna, scelerisque vitae lectus ut, rhoncus placerat leo. Nam consectetur ipsum ex, vel commodo erat viverra sed. Proin rutrum nunc a mauris lacinia, non suscipit est feugiat. Pellentesque posuere semper gravida. Pellentesque tempus maximus mauris at ullamcorper. Cras quis tempus ligula, in elementum ex. Nulla eget odio at nibh pellentesque lacinia. Vestibulum tincidunt urna libero, sed varius dui fringilla eget. Donec auctor nisi sed ligula tincidunt imperdiet. Curabitur ullamcorper condimentum massa, at aliquam lorem viverra a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed iaculis dui est, eu fermentum nulla tristique id. In ultricies, tellus ut sollicitudin placerat, eros augue scelerisque metus, eget porttitor elit est vitae purus.
+         <ul>
+            <li>You must use XOXZO phone API (simple playback, tts playback, DIN). SMS api is not counted.
+              for details about how to use, please look at <a href="http://docs.xoxzo.com/en/">this page.</a>
+            <li>Submit your project on public open source repository on github, gitlab, bitbucket, etc. and send its url to
+                <em>codecontest@xoxzo.com</em> via email.
+            <li>Submission must contain source code, tests and README documents on how to install or use
+            <li>Submission must be open source licensed.
+            <li>Applicant must sign up XOXZO account first. Please visit <a href="https://www.xoxzo.com/">here</a>
+            to sign up.
+            <li>Implementation language is not limited to python.
+            <li>If you have any questions, please contact <em>codecontest@xoxzo.com</em> via email.
+         </ul>
         </p>
-        <h3>Subtitle</h3>
+        <h3>How to apply?</h3>
         <p>
-          Mauris elementum tempus mi laoreet sollicitudin. Nulla sed sem tempus, dignissim arcu id, porta arcu. Morbi aliquet justo non ligula ultrices tempor. Cras varius congue nisl nec consequat. Sed tristique mi sed sapien posuere auctor. Nullam sit amet pellentesque mauris. Sed ut neque blandit, aliquam augue rhoncus, faucibus felis. Duis mollis enim urna, sit amet condimentum lacus consectetur id. Phasellus ornare libero ligula, nec efficitur sapien fermentum vitae.
+            Applicant is limited to attendee of PyCon APAC 2017.
+            Please visit XOXOZ booth and fill the form.
         </p>
+        <h3>Schedule</h3>
+        <ul>
+            <li>
+            Code submission dead line: Sep. 3 (Sun) 2017
+            <li>
+            Winner announcement: Sep. 11 (Mon) 2017
+          </ul>
+        <h3>Prize</h3>
+        <p>
+            Winner awarded $100 Amazon gift card for five people/teams.
+        </p>
+        <h3>Judging Criteria</h3>
+            <br>
+            Based on the following judging criteria, XOXZO Code PyCon committee will chose the winner.
+            <ul>
+                <li>Uniqueness/Ingenuity
+                <li>Feasibility
+                <li>How many potential users the plugin/app will have? (i.e if it's a plugin for a very famous CMS)
+            </ul>
+        <h3>Sample App category(but not limited to these)</h3>
+          <ul>
+            <li>Web app
+            <li>Mobile app
+            <li>CMS plugin
+            <li>Bot plugin
+            <li>Python package.
+          </ul>
       </div>
     </section>
+
     <section id="about">
       <div class="container">
         <h2>About XOXZO</h2>
         <p>
-          Mauris elementum tempus mi laoreet sollicitudin. Nulla sed sem tempus, dignissim arcu id, porta arcu. Morbi aliquet justo non ligula ultrices tempor. Cras varius congue nisl nec consequat. Sed tristique mi sed sapien posuere auctor. Nullam sit amet pellentesque mauris. Sed ut neque blandit, aliquam augue rhoncus, faucibus felis. Duis mollis enim urna, sit amet condimentum lacus consectetur id. Phasellus ornare libero ligula, nec efficitur sapien fermentum <a href="http://info.xoxzo.com">Xoxzo</a>.
-        </p>
-        <h3>XOXZO Telephony API</h3>
-        <h3>How to sign up XOXZO account</h3>
-      </div>
+          XOXZO is the telephony API company. Please click <a href="https://info.xoxzo.com/en/aboutus/">here</a> for details
     </section>
   </main>
 
@@ -86,7 +123,7 @@
           event.preventDefault();
 
           var hash = this.hash;
-          
+
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 800, function(){
