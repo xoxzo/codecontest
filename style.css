@@ -67,10 +67,18 @@ header h2 {
 }
 
 header h3 {
-  margin-top: 55px;
   font-family: 'Lobster', cursive;
-  color: #ffd446;
-  font-size: 2.15rem;
+  color: #ff4b4f;
+  font-size: 3.5rem;
+  margin-top: 15px;
+}
+
+header h4 {
+  margin-top: 45px;
+  font-family: 'Lobster', cursive;
+  color: #999;
+  font-size: 1.5rem;
+  text-decoration: line-through;
 }
 
 main {
